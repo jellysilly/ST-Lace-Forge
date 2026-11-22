@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+<rect width="80" height="80" fill="#1b1a1a"></rect>
+<g stroke="#2c2a29" stroke-width="1.2" fill="none">
+<line x1="0" y1="0" x2="80" y2="80"></line>
+<line x1="80" y1="0" x2="0" y2="80"></line>
+</g>
+<g fill="#363332">
+<ellipse cx="40" cy="34.5" rx="1.6" ry="3.2"></ellipse>
+<ellipse cx="40" cy="45.5" rx="1.6" ry="3.2"></ellipse>
+<ellipse cx="34.5" cy="40" rx="3.2" ry="1.6"></ellipse>
+<ellipse cx="45.5" cy="40" rx="3.2" ry="1.6"></ellipse>
+<circle cx="40" cy="40" r="1.5"></circle>
+<ellipse cx="0" cy="5.5" rx="1.6" ry="3.2"></ellipse><ellipse cx="80" cy="5.5" rx="1.6" ry="3.2"></ellipse>
+<ellipse cx="0" cy="74.5" rx="1.6" ry="3.2"></ellipse><ellipse cx="80" cy="74.5" rx="1.6" ry="3.2"></ellipse>
+<ellipse cx="5.5" cy="0" rx="3.2" ry="1.6"></ellipse><ellipse cx="5.5" cy="80" rx="3.2" ry="1.6"></ellipse>
+<ellipse cx="74.5" cy="0" rx="3.2" ry="1.6"></ellipse><ellipse cx="74.5" cy="80" rx="3.2" ry="1.6"></ellipse>
+<circle cx="0" cy="0" r="1.5"></circle><circle cx="80" cy="0" r="1.5"></circle><circle cx="0" cy="80" r="1.5"></circle><circle cx="80" cy="80" r="1.5"></circle>
+</g>
+</svg>
