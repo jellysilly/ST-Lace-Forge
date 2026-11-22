@@ -406,13 +406,6 @@ input[type='number'].field { font-family: var(--mono); }
 .step h3 { margin: 0; font-size: 22px; color: #f7f2ec; }
 .step p { margin: 0; font-size: 15px; color: #c4bbb2; line-height: 1.6; }
 
-.faq { display: flex; flex-direction: column; gap: 10px; max-width: 860px; margin: 0 auto; width: 100%; }
-.faq details { border-radius: 14px; border: 1px solid var(--line); background: rgba(31, 29, 29, 0.85); }
-.faq summary { cursor: pointer; list-style: none; padding: 16px 20px; min-height: 44px; display: flex; align-items: center; gap: 14px; font-size: 16px; color: #f7f2ec; }
-.faq summary::-webkit-details-marker { display: none; }
-.faq summary::before { content: ''; flex: none; width: 8px; height: 8px; transform: rotate(45deg); border: 1px solid var(--rose); transition: background 0.15s; }
-.faq details[open] summary::before { background: var(--rose); }
-.faq details p { margin: 0; padding: 0 20px 18px 42px; color: var(--text-3); font-size: 15px; line-height: 1.65; }
 
 /* ───────── phones ───────── */
 

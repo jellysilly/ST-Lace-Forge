@@ -1,5 +1,5 @@
 /**
- * Site owner settings. Edit the links here — a social with an empty `url` is hidden everywhere.
+ * Author settings. Edit the links here — a social with an empty `url` is hidden everywhere.
  * `icon` is one of: telegram, discord, github, boosty, youtube, x, mail, link.
  */
 export const AUTHOR = 'jellysilly';

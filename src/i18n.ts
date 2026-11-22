@@ -153,33 +153,6 @@ const ru = {
       { title: 'Куйте и забирайте', text: 'Генерируйте, правьте вручную, перековывайте отдельные блоки и экспортируйте файл.' },
     ],
     guideCta: 'Подключить API',
-    faqTitle: 'Частые вопросы',
-    faq: [
-      {
-        q: 'Что такое «мини-инструкции»?',
-        a: 'Длинный тоггл пресета модель читает целиком и легко упускает середину. Кнопка «Разделить на мини-инструкции» разбивает блок на короткие пронумерованные правила — они и уходят в экспорт вместо длинного текста. Исходный текст сохраняется, а пункты можно перековать по одному или разнести в отдельные тогглы.',
-      },
-      {
-        q: 'Как загрузить результат в SillyTavern?',
-        a: 'Пресет: панель AI Response Configuration → значок импорта у списка пресетов. Персонаж: кнопка импорта на панели персонажей (PNG или JSON). Лорбук: World Info → Import World Info. Персоны: Persona Management → Restore. В Tavo AI импорт устроен так же — через файлы JSON и PNG.',
-      },
-      {
-        q: 'Где хранятся мои данные и ключ?',
-        a: 'Только в вашем браузере (IndexedDB и localStorage). Запросы уходят напрямую на указанный вами эндпоинт, у сайта нет своего сервера. Если чистите данные браузера — сначала экспортируйте работу в файлы.',
-      },
-      {
-        q: 'Пишет «не удалось достучаться до API»',
-        a: 'Скорее всего, провайдер не принимает запросы из браузера (CORS). Используйте OpenRouter или свой прокси; у локальных серверов включите CORS — например, OLLAMA_ORIGINS=* для Ollama или флаг CORS в LM Studio.',
-      },
-      {
-        q: 'Ответ обрывается или «не удалось разобрать ответ»',
-        a: 'Модели не хватило токенов на ответ. Увеличьте «Макс. токенов ответа» в разделе API или просите меньше за раз (например, 6 записей лорбука вместо 20).',
-      },
-      {
-        q: 'Что делает переключатель NSFW 18+?',
-        a: 'Он есть в разделе «Сюжеты». Выключен — модель пишет «для всех»: без откровенных сцен и смакования жестокости. Включён — разрешены откровенные сцены, жестокость и тёмные темы; при первом включении сайт попросит подтвердить, что вам есть 18. В любом режиме участники откровенных сцен — только взрослые. Учтите: часть моделей и провайдеров отказывается от такого контента независимо от настроек сайта.',
-      },
-    ],
   },
   p: {
     kicker: 'Наковальня I',
@@ -319,7 +292,7 @@ const ru = {
     resFields: 'Полей: {n}',
     emptyLib: 'Пока пусто — создайте или импортируйте.',
     pngNote: 'PNG V3 содержит и V2 — читается SillyTavern, Tavo AI, RisuAI и другими.',
-    perPngNote: 'PNG — аватар с данными для этого сайта. Для SillyTavern берите JSON (Persona Management → Restore).',
+    perPngNote: 'PNG — аватар с данными персоны для Кузницы. Для SillyTavern берите JSON (Persona Management → Restore) или кнопку «В SillyTavern».',
     modeGreet: 'Сюжет',
     greetNote: 'Модель напишет приветствие для «{name}» по сюжету: из раздела «Сюжеты» или из файла .md / .txt.',
     greetSource: 'Сюжет',
@@ -544,7 +517,7 @@ const ru = {
     stOk: 'Соединение установлено',
     stNo: 'Укажите эндпоинт, ключ и модель',
     privTitle: 'Ключ остаётся у вас',
-    privText: 'Ключ хранится только в этом браузере и отправляется напрямую на ваш эндпоинт — у сайта нет своего сервера, он ключ не видит и никуда не пересылает.',
+    privText: 'Ключ хранится только в этом браузере и отправляется напрямую на ваш эндпоинт — Кузница никуда больше его не пересылает.',
     clearKey: 'Удалить ключ из браузера',
     keyCleared: 'Ключ удалён',
     genTitle: 'Генерация',
@@ -620,7 +593,7 @@ const en: Dict = {
     imported: 'Imported: {what}',
     importFailed: "Couldn't import “{name}”: {why}",
     exported: 'Saved: {name}',
-    storageFail: "The browser won't let the site save data (no space or private mode). Export your work to files so you don't lose it.",
+    storageFail: "The browser won't let the Forge save data (no space or private mode). Export your work to files so you don't lose it.",
     err: {
       json: 'the file is not valid JSON',
       'not-preset': "it's not a SillyTavern Chat Completion preset (no prompts array)",
@@ -745,33 +718,6 @@ const en: Dict = {
       { title: 'Forge and take it', text: 'Generate, edit by hand, reforge single blocks and export the file.' },
     ],
     guideCta: 'Connect API',
-    faqTitle: 'FAQ',
-    faq: [
-      {
-        q: 'What are “mini-instructions”?',
-        a: 'Models read a long preset toggle as a whole and easily miss the middle. “Split into mini-instructions” breaks a block into short numbered rules, and those go into the export instead of the long text. The original text is kept; points can be reforged one by one or turned into separate toggles.',
-      },
-      {
-        q: 'How do I load the result into SillyTavern?',
-        a: 'Preset: AI Response Configuration panel → the import icon next to the preset list. Character: the import button on the characters panel (PNG or JSON). Lorebook: World Info → Import World Info. Personas: Persona Management → Restore. Tavo AI imports the same JSON and PNG files.',
-      },
-      {
-        q: 'Where are my data and key stored?',
-        a: 'Only in your browser (IndexedDB and localStorage). Requests go straight to the endpoint you set; the site has no server of its own. Export your work before clearing browser data.',
-      },
-      {
-        q: '“Couldn\'t reach the API”',
-        a: "Most likely the provider doesn't accept browser requests (CORS). Use OpenRouter or your own proxy; enable CORS on local servers — e.g. OLLAMA_ORIGINS=* for Ollama or the CORS toggle in LM Studio.",
-      },
-      {
-        q: 'The reply is cut off or “couldn\'t parse the reply”',
-        a: 'The model ran out of tokens. Raise “Max response tokens” in API settings or ask for less at once (e.g. 6 lorebook entries instead of 20).',
-      },
-      {
-        q: 'What does the NSFW 18+ switch do?',
-        a: "It lives in the Plots section. Off, the model writes for a general audience: no explicit scenes or lingering on violence. On, explicit scenes, violence and dark themes are allowed; the first time you turn it on, the site asks you to confirm you are 18+. In either mode, everyone in explicit scenes is an adult. Note that some models and providers refuse such content regardless of the site's settings.",
-      },
-    ],
   },
   p: {
     kicker: 'Anvil I',
@@ -911,7 +857,7 @@ const en: Dict = {
     resFields: 'Fields: {n}',
     emptyLib: 'Empty for now — create or import.',
     pngNote: 'PNG V3 also carries V2 — readable by SillyTavern, Tavo AI, RisuAI and others.',
-    perPngNote: 'PNG is the avatar with data for this site. For SillyTavern use JSON (Persona Management → Restore).',
+    perPngNote: "PNG is the avatar with the persona data for the Forge. For SillyTavern use JSON (Persona Management → Restore) or the 'To SillyTavern' button.",
     modeGreet: 'Plot',
     greetNote: 'The model writes a greeting for “{name}” from a plot: one from Plots or a .md / .txt file.',
     greetSource: 'Plot',
@@ -1136,7 +1082,7 @@ const en: Dict = {
     stOk: 'Connected',
     stNo: 'Enter an endpoint, key and model',
     privTitle: 'Your key stays with you',
-    privText: 'The key is stored in this browser only and sent straight to your endpoint — the site has no server of its own; it never sees or forwards the key.',
+    privText: 'The key is stored in this browser only and sent straight to your endpoint — the Forge never forwards it anywhere else.',
     clearKey: 'Remove key from browser',
     keyCleared: 'Key removed',
     genTitle: 'Generation',

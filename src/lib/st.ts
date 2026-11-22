@@ -1,7 +1,7 @@
 /**
  * Bridge to SillyTavern. The extension opens this app in a same-origin iframe over the ST page,
  * so the parent window's `SillyTavern.getContext()` is reachable. Outside ST (vite dev, a plain
- * browser tab) every helper here reports "not in ST" and the app works as a standalone site.
+ * browser tab) every helper here reports "not in ST" and the app works on its own.
  */
 
 /* eslint-disable @typescript-eslint/no-explicit-any */

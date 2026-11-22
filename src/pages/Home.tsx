@@ -201,17 +201,6 @@ export function Home() {
             {h.guideCta}
           </a>
         </div>
-        <h3 className="serif" style={{ margin: '24px 0 0', textAlign: 'center', fontSize: 28, color: '#f7f2ec' }}>
-          {h.faqTitle}
-        </h3>
-        <div className="faq">
-          {h.faq.map((f, i) => (
-            <details key={i}>
-              <summary>{f.q}</summary>
-              <p>{f.a}</p>
-            </details>
-          ))}
-        </div>
       </section>
     </div>
   );
